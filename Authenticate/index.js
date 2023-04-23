@@ -15,11 +15,15 @@ const handleSignin=()=>{
   if(email === "" || password === ""  || username ===""  ){
     setError('Required field is missing ')
     setLoading(false)
+
   }
   loading().then((res)=>{
     console.log(res);
   })
+
 }
+
+
 const handleRegister=()=>{
   setError("")
   setLoading(true)
@@ -38,6 +42,7 @@ const handleRegister=()=>{
     })
   }
 }
+
   return (
     <div>    
         <div className='auth'>
